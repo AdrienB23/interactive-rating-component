@@ -1,0 +1,29 @@
+@use '../assets/variables' as *;
+@use 'sass:color';
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $grey-950;
+  padding: 2em;
+}
+
+.main-container {
+  display: flex;
+  background: #252D37;
+  background: linear-gradient(to bottom, #252D37 0%, #121417 100%);
+  border-radius: 2em;
+  padding: 2em;
+  height: fit-content;
+  max-width: 400px;
+}
+
+@media (max-width: 450px) {
+  .main-container {
+    padding: 1.5em;
+    border-radius: 1em;
+  }
+}

@@ -1,0 +1,44 @@
+@use '../../../assets/variables' as *;
+@use 'sass:color';
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3em;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2em;
+}
+
+.rating-selected {
+  padding: 0.5em 1.5em;
+  background-color: $grey-900;
+  border-radius: 999px;
+
+  span {
+    color: $orange;
+    font-weight: 400;
+    font-size: $paragraph;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+
+  h1 {
+    color: $white;
+  }
+
+  p {
+    color: $grey-500;
+    text-align: center;
+    font-size: $paragraph;
+  }
+}
